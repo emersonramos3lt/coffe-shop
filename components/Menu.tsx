@@ -5,10 +5,11 @@ import { useState } from 'react';
 
 const Menu = () => {
   
-  const [activeIndex, setActiveIndex] = useState(null);
-  const toggleAccordion = (index) => {
-    setActiveIndex(activeIndex === index ? null : index);
-  };
+ const [activeIndex, setActiveIndex] = useState<number | null>(null);
+
+  const toggleAccordion = (index: number) => {
+  setActiveIndex(activeIndex === index ? null : index);
+};
 
   return (
 
